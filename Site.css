@@ -1,0 +1,346 @@
+﻿body {
+    padding-top: 65px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+   /* max-width: 280px; */
+}
+
+.invoice_button{
+    padding: 1px;
+    font-size: 1.1em;
+}
+.center {
+    margin: auto;
+    width: auto;
+}
+.padding
+{
+    padding: 5px;
+    margin: 5px 5px 5px 5px ;
+}
+
+.invoice-header {
+   padding: 5px;
+}
+
+.client-info
+{
+    padding: 5px; 
+}
+
+.red
+{
+    color: red;
+}
+.green
+{
+    color: darkgreen;
+}
+.overdue 
+{
+    font-size:1.2em;
+    font-weight:bold;
+}
+.current 
+{
+    font-size:1em;
+     font-weight:bold;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.tiny_text
+{
+    font-size: .7em;
+}
+.padding-bottom {
+    padding-bottom: 20px;
+}
+
+#login_page {
+    float: none; 
+    background-color:rgba(6,166,21,0.6); 
+    margin-top:60px; 
+    margin-bottom:100px;
+}
+
+
+/* The heart of the matter */
+.btn-matrix > .btn:nth-child(3n+4) {
+  clear: left;
+  margin-left: 0;
+}
+.btn-matrix > .btn:nth-child(n+4) {
+  margin-top: -1px;
+}
+.btn-matrix > .btn:first-child {
+  border-bottom-left-radius: 0;
+}
+.btn-matrix > .btn:nth-child(3) {
+  border-top-right-radius: 4px !important;
+}
+.btn-matrix > .btn:nth-last-child(3) {
+  border-bottom-left-radius: 4px !important;
+}
+.btn-matrix > .btn:last-child {
+  border-top-right-radius: 0;
+}
+
+/* Decorations */
+.btn-matrix {
+  margin: 20px;
+}
+/*********** table style declarations ********/
+table {
+  background-color: transparent;
+}
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777;
+  text-align: left;
+}
+th {
+  text-align: center;
+}
+.tableInvoice {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.tableInvoice > thead > tr > th,
+.tableInvoice > tbody > tr > th,
+.tableInvoice > tfoot > tr > th,
+.tableInvoice > thead > tr > td,
+.tableInvoice > tbody > tr > td,
+.tableInvoice > tfoot > tr > td {
+  padding: 2px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.tableInvoice > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.tableInvoice > caption + thead > tr:first-child > th,
+.tableInvoice > colgroup + thead > tr:first-child > th,
+.tableInvoice > thead:first-child > tr:first-child > th,
+.tableInvoice > caption + thead > tr:first-child > td,
+.tableInvoice > colgroup + thead > tr:first-child > td,
+.tableInvoice > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.tableInvoice > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.tableInvoice .table {
+  background-color: #fff;
+}
+.tableInvoice-condensed > thead > tr > th,
+.tableInvoice-condensed > tbody > tr > th,
+.tableInvoice-condensed > tfoot > tr > th,
+.tableInvoice-condensed > thead > tr > td,
+.tableInvoice-condensed > tbody > tr > td,
+.tableInvoice-condensed > tfoot > tr > td {
+  padding: 1px;
+}
+.tableInvoice-bordered {
+  border: 1px solid #ddd;
+}
+.tableInvoice-bordered > thead > tr > th,
+.tableInvoice-bordered > tbody > tr > th,
+.tableInvoice-bordered > tfoot > tr > th,
+.tableInvoice-bordered > thead > tr > td,
+.tableInvoice-bordered > tbody > tr > td,
+.tableInvoice-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.tableInvoice-bordered > thead > tr > th,
+.tableInvoice-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.tableInvoice-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.tableInvoice-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+table col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+.tableInvoice > thead > tr > td.active,
+.tableInvoice > tbody > tr > td.active,
+.tableInvoice > tfoot > tr > td.active,
+.tableInvoice > thead > tr > th.active,
+.tableInvoice > tbody > tr > th.active,
+.tableInvoice > tfoot > tr > th.active,
+.tableInvoice > thead > tr.active > td,
+.tableInvoice > tbody > tr.active > td,
+.tableInvoice > tfoot > tr.active > td,
+.tableInvoice > thead > tr.active > th,
+.tableInvoice > tbody > tr.active > th,
+.tableInvoice > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+.tableInvoice-hover > tbody > tr > td.active:hover,
+.tableInvoice-hover > tbody > tr > th.active:hover,
+.tableInvoice-hover > tbody > tr.active:hover > td,
+.tableInvoice-hover > tbody > tr:hover > .active,
+.tableInvoice-hover > tbody > tr.active:hover > th {
+  background-color: #e8e8e8;
+}
+.tableInvoice > thead > tr > td.success,
+.tableInvoice > tbody > tr > td.success,
+.tableInvoice > tfoot > tr > td.success,
+.tableInvoice > thead > tr > th.success,
+.tableInvoice > tbody > tr > th.success,
+.tableInvoice > tfoot > tr > th.success,
+.tableInvoice > thead > tr.success > td,
+.tableInvoice > tbody > tr.success > td,
+.tableInvoice > tfoot > tr.success > td,
+.tableInvoice > thead > tr.success > th,
+.tableInvoice > tbody > tr.success > th,
+.tableInvoice > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+.tableInvoice-hover > tbody > tr > td.success:hover,
+.tableInvoice-hover > tbody > tr > th.success:hover,
+.tableInvoice-hover > tbody > tr.success:hover > td,
+.tableInvoice-hover > tbody > tr:hover > .success,
+.tableInvoice-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+.tableInvoice > thead > tr > td.info,
+.tableInvoice > tbody > tr > td.info,
+.tableInvoice > tfoot > tr > td.info,
+.tableInvoice > thead > tr > th.info,
+.tableInvoice > tbody > tr > th.info,
+.tableInvoice > tfoot > tr > th.info,
+.tableInvoice > thead > tr.info > td,
+.tableInvoice > tbody > tr.info > td,
+.tableInvoice > tfoot > tr.info > td,
+.tableInvoice > thead > tr.info > th,
+.tableInvoice > tbody > tr.info > th,
+.tableInvoice > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+.tableInvoice-hover > tbody > tr > td.info:hover,
+.tableInvoice-hover > tbody > tr > th.info:hover,
+.tableInvoice-hover > tbody > tr.info:hover > td,
+.tableInvoice-hover > tbody > tr:hover > .info,
+.tableInvoice-hover > tbody > tr.info:hover > th {
+  background-color: #c4e3f3;
+}
+.tableInvoice > thead > tr > td.warning,
+.tableInvoice > tbody > tr > td.warning,
+.tableInvoice > tfoot > tr > td.warning,
+.tableInvoice > thead > tr > th.warning,
+.tableInvoice > tbody > tr > th.warning,
+.tableInvoice > tfoot > tr > th.warning,
+.tableInvoice > thead > tr.warning > td,
+.tableInvoice > tbody > tr.warning > td,
+.tableInvoice > tfoot > tr.warning > td,
+.tableInvoice > thead > tr.warning > th,
+.tableInvoice > tbody > tr.warning > th,
+.tableInvoice > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+.tableInvoice-hover > tbody > tr > td.warning:hover,
+.tableInvoice-hover > tbody > tr > th.warning:hover,
+.tableInvoice-hover > tbody > tr.warning:hover > td,
+.tableInvoice-hover > tbody > tr:hover > .warning,
+.tableInvoice-hover > tbody > tr.warning:hover > th {
+  background-color: #faf2cc;
+}
+.tableInvoice > thead > tr > td.danger,
+.tableInvoice > tbody > tr > td.danger,
+.tableInvoice > tfoot > tr > td.danger,
+.tableInvoice > thead > tr > th.danger,
+.tableInvoice > tbody > tr > th.danger,
+.tableInvoice > tfoot > tr > th.danger,
+.tableInvoice > thead > tr.danger > td,
+.tableInvoice > tbody > tr.danger > td,
+.tableInvoice > tfoot > tr.danger > td,
+.tableInvoice > thead > tr.danger > th,
+.tableInvoice > tbody > tr.danger > th,
+.tableInvoice > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+.tableInvoice-hover > tbody > tr > td.danger:hover,
+.tableInvoice-hover > tbody > tr > th.danger:hover,
+.tableInvoice-hover > tbody > tr.danger:hover > td,
+.tableInvoice-hover > tbody > tr:hover > .danger,
+.tableInvoice-hover > tbody > tr.danger:hover > th {
+  background-color: #ebcccc;
+}
+.tableInvoice-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+@media screen and (max-width: 767px) {
+  .tableInvoice-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+.tableInvoice-responsive > .table {
+    margin-bottom: 0;
+  }
+.tableInvoice-responsive > .table > thead > tr > th,
+.tableInvoice-responsive > .table > tbody > tr > th,
+.tableInvoice-responsive > .table > tfoot > tr > th,
+.tableInvoice-responsive > .table > thead > tr > td,
+.tableInvoice-responsive > .table > tbody > tr > td,
+.tableInvoice-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+.tableInvoice-responsive > .table-bordered {
+    border: 0;
+  }
+.tableInvoice-responsive > .table-bordered > thead > tr > th:first-child,
+.tableInvoice-responsive > .table-bordered > tbody > tr > th:first-child,
+.tableInvoice-responsive > .table-bordered > tfoot > tr > th:first-child,
+.tableInvoice-responsive > .table-bordered > thead > tr > td:first-child,
+.tableInvoice-responsive > .table-bordered > tbody > tr > td:first-child,
+.tableInvoice-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+.tableInvoice-responsive > .table-bordered > thead > tr > th:last-child,
+.tableInvoice-responsive > .table-bordered > tbody > tr > th:last-child,
+.tableInvoice-responsive > .table-bordered > tfoot > tr > th:last-child,
+.tableInvoice-responsive > .table-bordered > thead > tr > td:last-child,
+.tableInvoice-responsive > .table-bordered > tbody > tr > td:last-child,
+.tableInvoice-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+.tableInvoice-responsive > .table-bordered > tbody > tr:last-child > th,
+.tableInvoice-responsive > .table-bordered > tfoot > tr:last-child > th,
+.tableInvoice-responsive > .table-bordered > tbody > tr:last-child > td,
+.tableInvoice-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+
